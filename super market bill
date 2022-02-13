@@ -1,0 +1,29 @@
+cname=input("enter a name")
+cphno=int(input("enter a phone number"))
+a=int(input("enter bread cost"))
+b=int(input("enter cheese cost"))
+c=int(input("enter eggs cost"))
+d=int(input("enter rice cost"))
+e=int(input("enter sugar cost"))
+aqty=int(input("enter no.of bread packets"))
+bqty=int(input("enter no.of cheese packets"))
+cqty=int(input("enter no. of eggs"))
+dqty=int(input("enter no.of rice packets"))
+eqty=int(input("enter no.of sugar packets"))
+total_bill=(a*aqty)+(b*bqty)+(c*cqty)+(d*dqty)+(e*eqty)
+if total_bill>5000:
+    Disc=total_bill*10/100
+if total_bill>3000:
+    Disc=total_bill*8/100
+if total_bill>2000:
+    Disc=total_bill*5/100
+if total_bill>1000:
+        Disc=total_bill*3/100
+if total_bill>3000:
+        tax=total_bill*10/100
+else:
+    tax=total_bill*18/100
+mainbill=total_bill-Disc+tax    
+print("bill amount",mainbill)
+        
+    
